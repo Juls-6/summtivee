@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("pic.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MY WORK</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE HTML & CSS</span></h5>
+    <p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</p>
+    <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page. In the above example, the CSS rule opens with a selector. This selects the HTML element that we are going to style.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p>Owner: Julius Anonuevo</p>
+    </div>
+    <img src="download.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+   
+  </div>
+</div>
+
+<!-- MY WORK Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MY WORK</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">HTML</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">CSS</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HTML Elements</h5>
+      <p class="w3-text-grey">An HTML element is defined by a start tag, some content, and an end tag.</p><br>
+    
+      <h5>HTML Paragraph</h5>
+      <p class="w3-text-grey">A paragraph always starts on a new line, and is usually a block of text.</p><br>
+    
+      <h5>HTML Style</h5>
+      <p class="w3-text-grey">The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p><br>
+    
+      <h5>HTML Links</h5>
+      <p class="w3-text-grey">Links are found in nearly all web pages. Links allow users to click their way from page to page.</p><br>
+    
+      <h5>HTML Images</h5>
+      <p class="w3-text-grey">Images can improve the design and the appearance of a web page.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>CSS Syntax</h5>
+      <p class="w3-text-grey">A CSS rule consists of a selector and a declaration block.</p><br>
+    
+      <h5>CSS Colors</h5>
+      <p class="w3-text-grey">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p><br>
+    
+      <h5>CSS Background</h5>
+      <p class="w3-text-grey">The CSS background properties are used to add background effects for elements.</p><br>
+    
+      <h5>CSS Borders</h5>
+      <p class="w3-text-grey">The CSS border properties allow you to specify the style, width, and color of an element's border.</p><br>
+    
+      <h5>CSS Text</h5>
+      <p class="w3-text-grey">CSS has a lot of properties for formatting text.</p>
+    </div>  
+    <img src="html.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    
+    <img src="Lipa.jpg" class="w3-image" style="width:100%">
+    
+	<p><span class="w3-tag">HI!</span> I am Julius the owner of this portfolio, I am a student and currently learning more about coding. Im happy to show you my works and project in this coding.</p>
+	<ul>
+  <li>FB: https://www.facebook.com/julius.anonuevo.169</li>
+  <li>eMail: juliusanonuevo101006@gmail.com</li>
+  <li>Tel Num: 0951 442 6651</li>
+</ul>  
+  <p><strong>Reserve</strong> for more information or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
